@@ -4,6 +4,7 @@
 2. Description
 
 This chatbot interacts with users and responds to study-related questions using predefined responses and keyword matching.
+To make the conversation feel more natural, the chatbot uses Python's time module to add small delays before certain responses, creating a more human-like interaction experience.
 
 3. Features
 
@@ -12,6 +13,7 @@ This chatbot interacts with users and responds to study-related questions using 
 - Keyword-based response matching
 - Beginner-friendly AI chatbot project
 - Little bit smarter as it is using dictionaries for responses.
+- Human-like response delays using the time module
 
 4. Technologies Used
 
@@ -22,6 +24,8 @@ This chatbot interacts with users and responds to study-related questions using 
 - String Handling
 - User Input
 - Looping Statements
+- time Module
+- datetime Module
 
 5. What I Learned
 
@@ -30,6 +34,7 @@ This chatbot interacts with users and responds to study-related questions using 
 - Organizing responses using dictionaries
 - Matching user queries with predefined answers
 - Structuring larger Python programs
+- Time-based Program Execution
 - We can also design a chatbot with if-elif-else but usig dictionaries as their response generator.
 
 6. Future Improvements
