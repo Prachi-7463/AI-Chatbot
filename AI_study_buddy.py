@@ -1,3 +1,22 @@
+# AI Rule - based Chatbot (Personal Assistant)
+
+import datetime
+import time
+
+name = input("Welcome, Enter Your Name: ")
+currentHour = datetime.datetime.now().hour
+
+if 5 <= currentHour <= 11:
+    print(currentHour,name)
+elif 11 <= currentHour <= 17:
+    print(currentHour,name)
+elif 17 <= currentHour <= 20:
+    print(currentHour,name)
+else:
+    print("Good Night, ", name)
+
+
+
 print("Hello ! I Am Your Study Buddy Helper.")
 print("If you feel to leave the chat, type Bye to exit!")
 print("What's On Your Mind?")
@@ -25,9 +44,10 @@ def responseGenerator(userQuestion):
     
 while True:
     userInput = input("You: ")
-    result = responseGenerator(userInput)
-    print("Study Buddy: ", result)
 
     if "bye" in userInput.lower():
         print("Study Buddy: Goodbye!")
         break
+
+    result = responseGenerator(userInput)
+    print("Study Buddy:", result)
